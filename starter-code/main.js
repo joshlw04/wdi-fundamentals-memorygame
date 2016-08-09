@@ -11,6 +11,7 @@ function createBoard() {
 		var cardElement = document.createElement('div');
 		cardElement.className = 'card';
 		cardElement.setAttribute('data-card', cards[i]);
+		cardElement.setAttribute('data-card-number', i);
 		cardElement.addEventListener('click', isTwoCards);
 		cardElement.innerHTML = '<img src="images/back.jpg">'
 		gameBoard.appendChild(cardElement);
@@ -26,6 +27,7 @@ function isTwoCards() {
 
 	//'this' is the same as the line above
 	cardsInPlay.push(this.getAttribute('data-card'));
+	console.log(cardsInPlay);
 	
 	if (cardsInPlay.length === 2) {
 		isMatch(cardsInPlay);
