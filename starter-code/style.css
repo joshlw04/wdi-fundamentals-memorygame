@@ -28,11 +28,16 @@ p {
 .card {
 	height: 200px;
 	width: 150px;
-	border: solid black 1px;
-	background: rgba(248, 231, 41, 1);
-	border-radius: 10px;
+	border: none;
+/* 	background: rgba(248, 231, 41, 1); */
+/* 	border-radius: 10px; */
 	margin: 30px;
 	display: inline-block;
+}
+
+.card img {
+	width: 100%;
+	height: auto;
 }
 
 .name {
