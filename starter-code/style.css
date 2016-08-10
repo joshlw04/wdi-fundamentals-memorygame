@@ -29,8 +29,8 @@ p {
 	height: 200px;
 	width: 150px;
 	border: none;
-/* 	background: rgba(248, 231, 41, 1); */
-/* 	border-radius: 10px; */
+	background-image: url('images/back.jpg');
+	/* 	border-radius: 10px; */
 	margin: 30px;
 	display: inline-block;
 }
