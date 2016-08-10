@@ -30,9 +30,10 @@ createBoard();
 //function to see if two cards are in play
 function isTwoCards() {
 	//'this' is grabbing the 'click' from whatever called this function, in this case the event Listener
+	//'this.getAttribute('data-card')' equates to 'queen' or 'king' depending on which 'this' is being called
 	this.innerHTML = '<img src="images/my_' + this.getAttribute('data-card') + '.jpg">'
 
-	//'this' is the same as the line above, from the click event inside gameBoard. Also, its pushing the data- attribute into the corresponding array:
+	//'this' is the same as the line above, from the click event inside gameBoard. Also, it's pushing the data- attribute into the corresponding array:
 	cardsInPlay.push(this.getAttribute('data-card'));
 	dataCardNumber.push(this.getAttribute('data-card-number'));
 
@@ -50,7 +51,7 @@ function isTwoCards() {
 //function to alert if player found a match
 function isMatch() {
 	if (cardsInPlay[0] === cardsInPlay[1]) {
-// 		alert("You found a match!");
+		alert("You found a match!");
  		cardsInPlay = [];
 	} else {
  		alert("Sorry, not a match!");
@@ -59,29 +60,6 @@ function isMatch() {
 		for (var i = 0; i <= allCards.length; i++) {
 			console.log(allCards[i]);
 			allCards[i].innerHTML = '<img src="images/back.jpg">';
-
 		}
-// 		innerHTML = '<img src="images/back.jpg">';
-
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
