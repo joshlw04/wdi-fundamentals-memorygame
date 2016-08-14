@@ -1,63 +1,18 @@
-/* This is a multi-line
-comment. Add your CSS code
-from Unit 1 - 5 below  */
-
-h1 {
-	color: rgb(2, 132, 130);
-	text-align: center;
-
-}
-			
-h2 {
-	color: #ffd700;
-	text-align: center;
-}
-
-p {
-	text-align: center;
-}
-
-.board {
-	height: 50%;
-	width: 50%;
-/* 	display: inline-block; */
-	float: left;
-	margin: 8%;
-}
-
-.card {
-	height: 200px;
-	width: 150px;
-	border: none;
-	background-image: url('images/back.jpg');
-	/* 	border-radius: 10px; */
-	margin: 30px;
-	display: inline-block;
-}
-
-.card img {
-	width: 100%;
-	height: auto;
-}
-
-.name {
-	color: #ff0000;
-}
-
 nav {
 	background-color: #808080;
 }
 
 nav a {
-	background-color: #ffbf00;
+	background-color: #0078ff;
 	color: white;
 	padding: 35px;
 	display: block;
 	float: left;
+	text-decoration: none;
 }
 
 nav a:hover {
-	background-color: #ee5f3c;
+	background-color: #d035a7;
 }
 
 .clearfix:after {
@@ -69,8 +24,70 @@ nav a:hover {
     font-size: 0;
 }
 
+h1 {
+	color: #d035a7;
+	text-align: center;
+}
+			
+h2 {
+	color: #ffd700;
+	text-align: center;
+}
+
+#match {
+	text-align: center;
+}
+
+#reset {
+
+}
+
+p {
+	text-align: center;
+	margin: 0 150px;
+}
+
+#score {
+	text-align: center;
+}
+
+/*
+.board {
+	height: 50%;
+	width: 50%;
+	float: left;
+	margin: 8%;
+}
+*/
+
+.card {
+	height: 200px;
+	width: 150px;
+	border: none;
+	margin: 30px;
+	display: inline-block;
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+}
+
+.card img {
+	width: 100%;
+	height: auto;
+	position: absolute;
+}
+
+#game-board {
+	text-align: center;
+}
+
+.name {
+	color: #ff0000;
+}
+
+
 footer {
-	background-color: #808080;
 	text-align: center;
 	clear: both;
 }

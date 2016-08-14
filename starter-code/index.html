@@ -9,15 +9,18 @@
     <nav class="clearfix">
       <a href="#">Instructions</a>
       <a href="#">Game</a>
+      <a href="http://www.facebook.com/joshua.l.whitney">My Facebook Page</a>
     </nav>
     
     <body>
-    	<h1>Memory Game</h1>
+    	<h1>Josh's Memory Game</h1>
     	<h2>Instructions</h2>
-    	<p>Concentration, also known as Match Match, Memory, Pelmanism, Shinkei-suijaku, Pexeso or simply Pairs, is a card game in which all of the cards are laid face down on a surface and two cards are flipped face up over each turn. The object of the game is to turn over pairs of matching cards.
-    	</p>
-    	<h3 class="score"> your score</h3>
     	
+	    	<p>Concentration, also known as Match Match, Memory, Pelmanism, Shinkei-suijaku, Pexeso or simply Pairs, is a card game in which all of the cards are laid face down on a surface and two cards are flipped face up over each turn. The object of the game is to turn over pairs of matching cards.
+    		</p>
+    	
+    	<h3 id="score"></h3>
+    	<h4 id="match"></h4>
     	<div id="game-board">
 	    	
 	    	<!--this is what javascript is writing...
@@ -39,11 +42,12 @@
 	    	</div>
 -->
   		</div>
-  
+  		<input id="reset" type="button" value="Reset the Board" onclick="flipCardsWhenDone();" />
   	<footer>
   		Created with &hearts; by <span class="name">Josh Whitney</span>
 	</footer>
-	<script src="main.js"></script>
+	<script src="main.js">		
+	</script>
 
     </body>
 
